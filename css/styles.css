@@ -26,7 +26,6 @@ body {
 /* HEADER */
 .header {
 	padding: 25px 0;
-	font-family: Roboto;
 	font-weight: 500;
 	font-size: 14px;
 }
@@ -84,7 +83,6 @@ body {
 }
 
 .hero-title {
-	font-family: Roboto;
 	font-size: 44px;
 	font-weight: 900;
 	line-height: 60px;
@@ -94,7 +92,6 @@ body {
 }
 
 .hero-btn {
-	font-family: Roboto;
 	font-size: 16px;
 }
 
@@ -114,7 +111,6 @@ body {
 }
 
 .about-card-title {
-	font-family: Roboto;
 	font-weight: 700;
 	font-size: 14px;
 	margin-bottom: 10px;
@@ -124,7 +120,6 @@ body {
 .about-card-desc {
 	color:rgba(117, 117, 117, 1);
 	text-align: justify;
-	font-family: Roboto;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
@@ -141,9 +136,9 @@ body {
 }
 .title {
 	text-align: center;
-	font-family: Roboto;
 	font-weight: 700;
 	font-size: 36px;
+	margin: 0 0 50px;
 }
 
 .what-photos {
@@ -151,7 +146,6 @@ body {
 	gap: 30px;
 	justify-content: center;
 }
-
 .our-team {
 	height: 648px;
 }
@@ -172,19 +166,21 @@ body {
 .our-team-container {
 	display: flex;
 	gap: 30px;
-	justify-content: center;
 	margin: 0 auto;
 	margin-top: 50px;
 }
+.img {
+	flex: 1 1 30%;
+	height: 294px;
+	object-fit: cover;
+}
 .name {
 	font-size: 16px;
-	font-family: Roboto;
 	font-weight: 500px;
 	margin-top: 30px;
 	text-align: center;
 }
 .position {
-	font-family: Roboto;
 	text-align: center;
 	margin-top: 10px; 
 	font-weight: 400px;
@@ -192,7 +188,6 @@ body {
 	color: rgba(117, 117, 117, 1);
 }
 	footer {
-		font-family: Roboto;
 		width: 100%; 
 		height: 252px; 
 		background-color: rgba(47, 48, 58, 1); 
@@ -207,21 +202,20 @@ body {
 	}
 	.footer-info {
 		display: flex;
-		flex-direction: column;
+		flex-flow: column;
 		justify-content: flex-start;
-		font-family: Roboto;
 		font-weight: 400;
 		font-size: 14px;
+		gap: 9px;
+		align-items: flex-start;
 
 	}
 	.footer-info p {
-		margin-bottom: 9px; 
 		line-height: 24px;
 	  }  
 	  .footer-info a {
 		text-decoration: none; 
 		display: block; 
-		margin-bottom: 9px; 
 		color: rgba(255, 255, 255, 0.6);
 		line-height: 24px;
 	  }
@@ -251,7 +245,6 @@ body {
 		border: none; 
 		font-size: 16px; 
 		cursor: pointer; 
-		font-family: Roboto;
 		font-weight: 500;
 	}
 	
@@ -308,14 +301,12 @@ body {
     font-size: 16px; 
     color: rgba(33, 33, 33, 1); 
 	line-height: 36px;
-	font-family: Roboto;
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 6%;
 }
 
 .card-text p:nth-child(2) {
-	font-family: Roboto;
     font-weight: 400; 
 	font-size: 16px;
     color:rgba(117, 117, 117, 1); 
