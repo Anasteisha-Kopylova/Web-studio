@@ -3,7 +3,7 @@
 /* GLOBAL CLASSES */
 body {
 	color: #212121;
-	font-size: 14px;
+	font-family: Roboto;
 }
 
 .container {
@@ -144,7 +144,6 @@ body {
 	font-family: Roboto;
 	font-weight: 700;
 	font-size: 36px;
-	letter-spacing: 3%;
 }
 
 .what-photos {
