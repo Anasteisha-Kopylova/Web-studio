@@ -340,7 +340,7 @@ body {
     height: 294px;
 }
 
-/* Hide the overlay text by default */
+
 .overlay-text {
     position: absolute;
     top: 0;
@@ -355,9 +355,9 @@ body {
     text-align: left;
     padding: 24px;
     box-sizing: border-box;
-    opacity: 0; /* Initially hidden */
-    visibility: hidden; /* Initially hidden */
-    transition: opacity 0.3s ease, visibility 0s 0.3s; /* Smooth opacity transition */
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0s 0.3s; 
 }
 
 
