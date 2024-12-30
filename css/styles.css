@@ -62,10 +62,77 @@ body {
 	gap: 50px;
 }
 .header-contacts a[href^="mailto:"] {
-    color: rgba(33, 150, 243, 1); 
+    color: rgb(33, 150, 243); 
 }
 .header-contacts a[href^="tel:"] {
     color: rgba(117, 117, 117, 1); 
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.header-list > li {
+    position: relative;
+}
+
+.header-list a {
+    text-decoration: none;
+    color: #212121;
+    padding: 10px;
+}
+
+.header-list a:hover {
+    color: #2196F3;
+}
+
+.submenu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2196f3;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+.submenu:hover .submenu-list {
+    display: block;
+}
+
+.submenu-item {
+    position: relative;
+}
+
+.submenu-item > a {
+    color: #fff;
+    display: block;
+}
+
+.submenu-item .submenu-list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    min-width: 100px;
+    opacity: 0;
+}
+
+.submenu-item.third:hover .submenu-list {
+    display: block;
+    opacity: 1;
+}
+
+.submenu-list a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.submenu-list a:hover {
+    background-color: #09040f;
 }
 
 /* HERO */
@@ -146,6 +213,34 @@ body {
 	gap: 30px;
 	justify-content: center;
 }
+
+.what-photos-cards {
+	flex: 1 1 30%;
+	position: relative;
+}
+
+.what-photos-img {
+	width: 100%;
+	height: 294px;
+	object-fit: cover;
+}
+
+.what-photos-cards-title {
+	height: 70px;
+	background: rgba(47, 48, 58, .8);
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+ 	align-items: center;
+	position: absolute;
+	bottom: 0;
+    left: 0;
+	right: 0;
+}
+
 .our-team {
 	height: 648px;
 }
@@ -191,7 +286,7 @@ body {
 	color: rgba(117, 117, 117, 1);
 }
 	footer {
-		width: 100%; 
+		width:100%; 
 		height: 252px; 
 		background-color: rgba(47, 48, 58, 1); 
 		color: #fff; 
