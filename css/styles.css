@@ -287,6 +287,20 @@ body {
 	padding-bottom: 30px;
 }
 
+.team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+	margin-bottom: 30px;
+}
+
+.team-icons .icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8; 
+	object-fit: contain;
+} 
+
 .our-team{
 	background-color: rgba(245, 244, 250, 1);
 	padding-top: 94px;
