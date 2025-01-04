@@ -295,11 +295,14 @@ body {
 }
 
 .team-icons .icon {
-    width: 20px;
-    height: 20px;
     fill: #AFB1B8; 
-	object-fit: contain;
+	width: 20px;
+	height: 20px;
 } 
+.icon {
+	width: 44px;
+	height: 44px;
+  }
 
 .our-team{
 	background-color: rgba(245, 244, 250, 1);
