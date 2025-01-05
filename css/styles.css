@@ -274,7 +274,7 @@ body {
 }
 
 .our-team {
-	height: 648px;
+	height: 708px;
 }
 
 .team-card {
@@ -294,15 +294,30 @@ body {
 	margin-bottom: 30px;
 }
 
-.team-icons .icon {
-    fill: #AFB1B8; 
-	width: 20px;
-	height: 20px;
-} 
-.icon {
+.icon-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
-  }
+	border-radius: 50%; 
+    background-color: transparent;
+}
+
+svg.icon {
+    fill: #afb1b8; 
+	width: 20px;
+	height: 20px;
+	transform-origin: center;
+} 
+
+.icon-link:hover {
+    background-color: #2196f3; 
+}
+
+.icon-link:hover .icon {
+    fill: #fff; 
+}
 
 .our-team{
 	background-color: rgba(245, 244, 250, 1);
@@ -334,13 +349,43 @@ body {
 	font-size: 16px;
 	color: rgba(117, 117, 117, 1);
 }
+
+.regular-customes{
+	margin-top: 94px;
+	margin-bottom: 94px;
+}
+
+.customers-cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.customers-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.customers-card-icon {
+	width: 170px;
+	height: 92px;
+	fill: #AFB1B8;
+  }
+  
+   .card-link:hover .customers-card-icon{
+	fill: #007BFF; 
+  }
+  
+
 	footer {
 		width:100%; 
 		height: 252px; 
 		background-color: rgba(47, 48, 58, 1); 
 		color: #fff; 
 		padding-left: 215px;
-		padding-top: 60px; 
+		padding-top: 50px; 
 		font-size: 14px;
 		font-weight: 400;
 	}
@@ -493,7 +538,9 @@ body {
 	opacity: 1;
 }
 
-
+.hidden {
+	display: none;
+}
 
 
 
