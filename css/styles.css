@@ -1,3 +1,4 @@
+
 @import url('reset.css');
 
 /* GLOBAL CLASSES */
@@ -366,6 +367,8 @@ svg.icon {
 .card-link {
 	border: 1px solid #AFB1B8;
 	border-radius: 4px;
+    position: relative;
+    overflow: hidden;
   }
 
 .customers-card-icon {
@@ -374,6 +377,73 @@ svg.icon {
 	fill: #AFB1B8;
   }
   
+  .card-link::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(33, 150, 243, 1); 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0); 
+    transform-origin: left center; 
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+  
+    .card-link::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(33, 150, 243, 1); 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0); 
+    transform-origin: right center; 
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+  
+  .card-link .left {
+    content: '';
+    position: absolute;
+    background-color: rgba(33, 150, 243, 1); 
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0); 
+    transform-origin: top center; 
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card-link .right {
+    content: '';
+    position: absolute;
+    background-color: rgba(33, 150, 243, 1); 
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0); 
+    transform-origin: bottom center; 
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+  
+  .card-link:hover::before {
+    transform: scaleX(1); 
+  }
+  
+  .card-link:hover::after {
+    transform: scaleX(1); 
+  }
+  
+  .card-link:hover .left {
+    transform: scaleY(1); 
+  }
+  
+  .card-link:hover .right {
+    transform: scaleY(1); 
+  }
    .card-link:hover {
 	border-color: rgba(33, 150, 243, 1); 
   }
@@ -558,6 +628,21 @@ svg.icon {
 	display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
