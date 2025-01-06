@@ -351,22 +351,22 @@ svg.icon {
 }
 
 .regular-customes{
-	margin-top: 94px;
-	margin-bottom: 94px;
+	margin: 94px 0;
 }
 
-.customers-cards {
+
+.card-links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
 }
 
-.customers-card {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
+.card-link {
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+  }
 
 .customers-card-icon {
 	width: 170px;
@@ -374,10 +374,12 @@ svg.icon {
 	fill: #AFB1B8;
   }
   
-   .card-link:hover .customers-card-icon{
-	fill: #007BFF; 
+   .card-link:hover {
+	border-color: rgba(33, 150, 243, 1); 
   }
-  
+  .card-link:hover .customers-card-icon {
+	fill: rgba(33, 150, 243, 1);
+  }
 
 	footer {
 		width:100%; 
@@ -385,13 +387,24 @@ svg.icon {
 		background-color: rgba(47, 48, 58, 1); 
 		color: #fff; 
 		padding-left: 215px;
-		padding-top: 50px; 
+		padding-top: 60px; 
 		font-size: 14px;
 		font-weight: 400;
 	}
-	.footer-logo {
-		margin-bottom: 20px;
+	.footer-logo-container {
+		display: flex;
+		gap: 156px; 
+		margin-bottom: 20px; 
 	}
+	.footer-icons-info {
+		display: flex;
+		gap: 140px;
+	}
+	.footer-logo {
+		font-size: 14px;
+		font-weight: 700;
+	}
+
 	.footer-info {
 		display: flex;
 		flex-flow: column;
@@ -411,7 +424,10 @@ svg.icon {
 		color: rgba(255, 255, 255, 0.6);
 		line-height: 24px;
 	  }
-	
+	.join-us {
+		position: absolute;
+		left: 516px;
+	}
 
 	  .button-container {
 		margin-top: 94px;
