@@ -274,10 +274,6 @@ body {
 	right: 0;
 }
 
-.our-team {
-	height: 708px;
-}
-
 .team-card {
     flex: 1 1 20%;
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -323,6 +319,7 @@ svg.icon {
 .our-team{
 	background-color: rgba(245, 244, 250, 1);
 	padding-top: 94px;
+	padding-bottom: 94px;
 }
 .our-team-container {
 	display: flex;
@@ -606,7 +603,6 @@ svg.icon {
     height: 294px;
 }
 
-
 .overlay-text {
     position: absolute;
 	display: flex;
@@ -631,6 +627,87 @@ svg.icon {
 
 
 
+
+
+@media (max-width: 1170px) {
+
+	.our-team {
+		max-width: 1170px;
+		margin: 0 auto;
+		width: 100%;  
+        position: relative; 
+	}
+	.header-logo {
+		margin-right: 60px;
+	}
+	.our-team-container {
+		display: flex;
+	    margin-top: 50px;
+	    max-width: 992px;
+		gap: 15px;
+		  
+	}
+	.card-links {
+		gap: 15px;
+	}
+	.icons-about {
+		padding: 0 15px;
+	}
+    
+}
+
+@media (max-width: 992px) {
+	.header-logo {
+		margin-right: 10px;
+	}
+	.header-list {
+		gap: 8px;
+	}
+	.header-contacts {
+		gap: 20px;
+	}
+	.our-team {
+		max-width: 992px;
+	}
+	.our-team-container {
+	display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;  
+    gap: 20px;  
+    max-width: 768px;
+		  
+	}
+	.team-card {
+		flex: 0 0 33%;
+		flex-direction: column;
+	}
+	
+	.card-links {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 100px;
+		gap: 30px;
+	}
+
+	.card-link {
+		flex: 0 0 25%;
+	}
+
+	.icons-about {
+		padding: 0 15px;
+	}
+
+	footer {
+		padding-left: 150px;
+	}
+	.hero-title {
+		font-size: 30px;
+	}
+	.title {
+		font-size: 26px;
+	}
+}
+    
 
 
 
