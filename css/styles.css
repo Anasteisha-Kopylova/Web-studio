@@ -30,6 +30,7 @@ body {
 	font-weight: 500;
 	font-size: 14px;
 }
+
 .header a:hover {
 	color: #2196F3;
 }
@@ -136,11 +137,33 @@ body {
     background-color: #09040f;
 }
 
+/* BURGER */
+.burger-toggle {
+	display: none;
+  }
+  
+  .burger-menu {
+	display: none;
+	cursor: pointer;
+	flex-direction: column;
+	gap: 5px;
+	width: 25px;
+	height: 20px;
+  }
+  
+  .burger-line {
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	transition: 0.3s;
+  }
 /* HERO */
 
 .hero {
 	height: 600px;
 	background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../img/background-img.jpg);
+	background-size: cover;
+	background-position: center;
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -165,15 +188,23 @@ body {
 
 /* ABOUT */
 
-.about {
+
+ .about {
 	padding: 94px 0;
+	display: flex; /* Чтобы флекс работал */
+    flex-direction: column; /* Вертикальное выравнивание */
+    justify-content: center;
+    align-items: center;
 }
 
 .icons-about{
 	display: flex;
-	justify-content: center;
-	gap: 30px;
-	margin-bottom: 30px;
+    gap: 30px; /* Отступ между иконками */
+    margin-bottom: 30px;
+    max-width: 1200px; /* Максимальная ширина блока */
+    width: 100%; /* Ширина блока будет 100% доступного пространства */
+    margin-left: auto; /* Центрирование */
+    margin-right: auto; /* Центрирование */
 }
 
 .icon-about {
@@ -215,15 +246,17 @@ body {
 	font-size: 14px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+	padding-top: 50px;
 }
 
 .about-card-desc {
 	color:rgba(117, 117, 117, 1);
 	text-align: justify;
 	font-weight: 400;
+	width: 270px;
 	font-size: 14px;
 	line-height: 24px;
-}
+} 
 
 /* WHAT ARE WE DOING */
 
@@ -448,7 +481,7 @@ svg.icon {
 	fill: rgba(33, 150, 243, 1);
   }
 
-	footer {
+    footer {
 		width:100%; 
 		height: 252px; 
 		background-color: rgba(47, 48, 58, 1); 
@@ -624,15 +657,40 @@ svg.icon {
 	display: none;
 }
 
+.header-burger {
+	display: none;
+}
+
+.burger-toggle + .header-burger {
+    display: none;
+}
+.menu-list {
+	display: none;
+}
 
 
+@media (max-width: 1200px) {
 
-
-
-@media (max-width: 1170px) {
+	
+	.icons-about {
+		display: flex;
+		gap: 30px;
+		max-width: 1200px; 
+		width: 80%; 
+		margin: 0 auto; 
+		justify-content: center; 
+		flex-wrap: wrap; 
+	}
+	
+	.about-card {
+		flex: 1 1 45%; 
+		min-width: 280px; 
+		box-sizing: border-box; 
+	}
+	
 
 	.our-team {
-		max-width: 1170px;
+		max-width: 1200px;
 		margin: 0 auto;
 		width: 100%;  
         position: relative; 
@@ -647,24 +705,36 @@ svg.icon {
 		gap: 15px;
 		  
 	}
-	.card-links {
-		gap: 15px;
-	}
-	.icons-about {
-		padding: 0 15px;
+
+	.header-burger {
+		display: none;
 	}
     
 }
 
 @media (max-width: 992px) {
+
+	.icons-about {
+		display: flex;
+		gap: 30px;
+		max-width: 992px; 
+		margin: 0 auto; 
+		justify-content: center; 
+		flex-wrap: wrap; 
+	}
+	
+	.about-card {
+		flex: 0 0 45%; 
+		box-sizing: border-box; 
+	}
 	.header-logo {
-		margin-right: 10px;
+		margin-right: 50px;
 	}
 	.header-list {
 		gap: 8px;
 	}
 	.header-contacts {
-		gap: 20px;
+		display: none;
 	}
 	.our-team {
 		max-width: 992px;
@@ -674,42 +744,232 @@ svg.icon {
     flex-wrap: wrap;  
     justify-content: center;  
     gap: 20px;  
-    max-width: 768px;
-		  
+    max-width: 575px;  
 	}
-	.team-card {
-		flex: 0 0 33%;
-		flex-direction: column;
-	}
-	
 	.card-links {
-		display: flex;
+		gap: 15px;
 		flex-wrap: wrap;
-		margin: 0 100px;
-		gap: 30px;
 	}
-
-	.card-link {
-		flex: 0 0 25%;
-	}
-
 	.icons-about {
 		padding: 0 15px;
 	}
-
 	footer {
-		padding-left: 150px;
+		padding-left: 50px;
 	}
-	.hero-title {
-		font-size: 30px;
-	}
+	
 	.title {
 		font-size: 26px;
 	}
+	.burger-toggle + .header-burger {
+        display: block;
+    }
+	.what-photos {
+		flex-wrap: wrap;
+	}
+	.what-photos-cards {
+		flex: 1 1 45%;
+	}
+
 }
-    
+
+@media (max-width: 768px) {
+
+	.icons-about {
+		display: flex;
+		gap: 15px;
+		max-width: 992px; 
+		margin: 0 auto; 
+		justify-content: center; 
+		flex-wrap: wrap; 
+	}
+	
+	.about-card {
+		flex: 0 0 45%; 
+		box-sizing: border-box; 
+	}
+
+	.hero {
+       height: 480px;
+    }
+
+	.our-team {
+		max-width: 768px;
+	}
+	.hero {
+		max-width: 768px;
+	}
+	.hero-title {
+        font-size: 30px; 
+        line-height: 40px; 
+        margin: 0 auto 20px; 
+        width: auto;  
+        white-space: normal; 
+    }
 
 
+	.header-list, .header-contacts {
+		display: none;
+	}
+	.header-burger {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		width: 24px;
+		height: 16px;
+		cursor: pointer;
+	}
+	
+	.header-burger::before,
+	.header-burger::after,
+	.header-burger span {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 2.67px;
+		background: black;
+		transition: all 0.3s ease;
+	}
+	
+	.header-burger::before {
+		top: 0;
+	}
+	
+	.header-burger span {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.header-burger::after {
+		bottom: 0;
+	}
+	
+	/* крестик */
+	.burger-toggle:checked + .header-burger::before {
+		transform: rotate(45deg);
+		top: 50%;
+	}
+	
+	.burger-toggle:checked + .header-burger span {
+		opacity: 0;
+	}
+	
+	.burger-toggle:checked + .header-burger::after {
+		transform: rotate(-45deg);
+		bottom: 50%;
+	}
+	
+	.side-menu {
+		display: block;
+		position: absolute;
+		top: 70px;   
+		width: 120px; 
+		right: -120px;
+		height: auto;  
+		background-color: white;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		transition: right 0.3s ease; 
+		z-index: 100;
+		padding: 10px;
+	}
+	
+	.menu-list {
+		display: block;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		text-align: left;
+	}
+	
+	.menu-list li {
+		margin: 10px 0;
+	}
+	
+	.menu-list li a {
+		text-decoration: none;
+		color: black;
+		font-size: 18px;
+		font-weight: 400;
+	}
+	
+	.burger-toggle:checked ~ .side-menu {
+		right: 0;  
+	}
+	
+	
+	.burger-toggle:checked ~ .header-contacts {
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	.header-contacts a {
+		color: #2196F3;
+		text-decoration: none;
+		font-size: 16px;
+		margin: 0 10px;
+	}
+	
+	
+}
+	
+@media (max-width: 595px) {
+
+	.our-team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+	.team-card {
+		flex: 0 0 50%;
+	}
+	.what-photos,
+	.what-photos-cards {
+		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 540px) {
+	.what,
+	.regular-customes {
+		display: none;
+	}
+}
+	
+	
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+	
+	  
+	 
+
+	
+
+	
+	
+	
+	
 
 
 
