@@ -191,20 +191,20 @@ body {
 
  .about {
 	padding: 94px 0;
-	display: flex; /* Чтобы флекс работал */
-    flex-direction: column; /* Вертикальное выравнивание */
+	display: flex; 
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
 
 .icons-about{
 	display: flex;
-    gap: 30px; /* Отступ между иконками */
+    gap: 30px; 
     margin-bottom: 30px;
-    max-width: 1200px; /* Максимальная ширина блока */
-    width: 100%; /* Ширина блока будет 100% доступного пространства */
-    margin-left: auto; /* Центрирование */
-    margin-right: auto; /* Центрирование */
+    max-width: 1200px; 
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .icon-about {
@@ -909,7 +909,6 @@ svg.icon {
 		font-size: 16px;
 		margin: 0 10px;
 	}
-	
 	
 }
 	
