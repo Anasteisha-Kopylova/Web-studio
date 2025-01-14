@@ -691,6 +691,16 @@ footer {
 	.header-burger {
 		display: none;
 	}
+
+	.services-cards-container {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.service-card {
+		flex: 0 0 auto;
+
+	}
     
 }
 
@@ -828,6 +838,14 @@ footer {
 	.header-burger::after {
 		bottom: 0;
 	}
+
+	.second-header-contacts {
+		display: none;
+	}
+
+	.button-container {
+		margin-top: 60px;
+	}
 	
 	/* крестик */
 	.burger-toggle:checked + .header-burger::before {
@@ -895,6 +913,14 @@ footer {
 		margin: 0 10px;
 	}
 	
+}
+
+@media (max-width: 640px) {
+.button-container {
+	display: flex;
+	flex-wrap: wrap;
+
+}
 }
 	
 @media (max-width: 595px) {
