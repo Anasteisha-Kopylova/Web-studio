@@ -208,7 +208,6 @@ body {
 }
 
 .icon-about {
-	width: 270px;
 	height: 120px;
 	background-color: rgba(245, 244, 250, 1);
 	background-repeat: no-repeat;
@@ -363,7 +362,6 @@ svg.icon {
 }
 .img {
 	width: 100%;
-	flex: 1 1 30%;
 	height: 260px;
 	object-fit: cover;
 }
@@ -623,7 +621,6 @@ footer {
 }
 
 .footer-container {
-	margin-left: 215px;
 	display: flex;
 	gap: 150px;
 }
@@ -758,11 +755,6 @@ footer {
 	.what-photos-cards {
 		flex: 1 1 45%;
 	}
-	.footer-container {
-		max-width: 992px; 
-		margin: 0 120px;
-	}
-
 }
 
 @media (max-width: 768px) {
@@ -772,8 +764,7 @@ footer {
 	}
 
 	.footer-container {
-		max-width: 768px; 
-		margin: 0 100px;
+		justify-content: center;
 		gap: 30px;
 	}
 
@@ -923,6 +914,7 @@ footer {
 .button-container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-start;
 
 }
 }
@@ -930,8 +922,6 @@ footer {
 @media (max-width: 595px) {
 
 	.footer-container {
-		max-width: 595px; 
-		margin: 0 60px;
 		gap: 30px;
 	}
 
@@ -956,12 +946,8 @@ footer {
 		display: none;
 	}
 	.footer-container {
-		display: flex;
 		flex-direction: column; 
 		gap: 30px; 
-		max-width: 540px; 
-		margin: 0 auto; 
-		padding: 0 120px;
 	}
 	
 	.footer-column {
